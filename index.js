@@ -9,6 +9,8 @@ const app = express();
 app.use(express.json());
 dbConnection();
 
+app.use(cors());
+
 // Directorio publico
 app.use(express.static('public'));
 
